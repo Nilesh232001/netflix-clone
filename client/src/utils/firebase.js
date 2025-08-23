@@ -1,14 +1,22 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDsppvErU8JtA-lmQaNQcEuOYzHs20mGn4",
+  authDomain: "reactnetflixclone-b6e3f.firebaseapp.com",
+  projectId: "reactnetflixclone-b6e3f",
+  storageBucket: "reactnetflixclone-b6e3f.firebasestorage.app",
+  messagingSenderId: "744676513414",
+  appId: "1:744676513414:web:525d9ccbed298936926307",
+  measurementId: "G-WSSXQ2PYSL"
 };
+
+
 
 const app = initializeApp(firebaseConfig);
 export const firebaseAuth = getAuth(app);
